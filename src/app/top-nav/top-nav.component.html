@@ -5,7 +5,10 @@
     ></a>
     <ul class="dropdown-menu message-dropdown">
       <!-- <MessagePreview   -->
-      <app-message-preview></app-message-preview>
+      <app-message-preview
+        *ngFor="let message of messages"
+        [message]="message"
+      ></app-message-preview>
       <!-- MessagePreview   -->
 
       <li class="message-footer">

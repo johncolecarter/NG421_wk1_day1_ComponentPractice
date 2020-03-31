@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import orders from "../orders";
+import { getCurrencySymbol } from "@angular/common";
 
 @Component({
   selector: "app-transactions-panel",
